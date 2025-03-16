@@ -6,6 +6,7 @@
     <title>Página principal - Petaco Bar</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/fonts.css">
+    <link rel="icon" href="img/PetacoBar-logo.png" type="image/x-icon">
 </head>
 <body>
     <!-- Navbar -->
@@ -14,43 +15,43 @@
             <img src="img/PetacoBar-logo.png" alt="Petaco Bar">
         </div>
         <ul class="menu">
-            <li><a href="#">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li class="dropdown">
-                <a href="#">Menú ⌄</a>
+                <a href="#">Menu ▾</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#bebidas">Nuestras Bebidas</a></li>
+                    <li><a href="HTML/cocteles.html">Cocteles</a></li>
+                    <li><a href="HTML/shots.html">Shots</a></li> 
+                    <li><a href="HTML/de_la_casa.html">De la cas</a></li>
                 </ul>
             </li>
             <li><a href="#">Ubicación</a></li>
             <li><a href="#">Horario</a></li>
         </ul>
-    </nav>
-
+    </nav>    
     <!-- Sección de Bebidas -->
     <section id="bebidas">
         <h2>Nuestras Bebidas</h2>
         <div class="bebidas-container">
             <div class="bebida">
-                <a href="cocteles.html">
+                <a href="HTML/cocteles.html">
                     <img src="img/Bebida-cocteles.jpg" alt="Cocteles">
-                    <h3>Cocteles</h3>
+                    <h3 class="link">Cocteles</h3>
                 </a>
             </div>
             <div class="bebida">
-                <a href="shots.html">
+                <a href="HTML/shots.html">
                     <img src="img/Bebida-shots.jpg" alt="Shots">
-                    <h3>Shots</h3>
+                    <h3 class="link">Shots</h3>
                 </a>
             </div>
             <div class="bebida">
-                <a href="delacasa.html">
+                <a href="HTML/de_la_casa.html">
                     <img src="img/Bebida-delacasa.jpg" alt="De la Casa">
-                    <h3>De la Casa</h3>
+                    <h3 class="link">De la Casa</h3>
                 </a>
             </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer>
         <div class="footer-container">
@@ -76,7 +77,6 @@
             <p>El Petaco Bar 2005 | Aviso legal Protección de Datos | Configuración de Cookies | Creado por El Petaco</p>
         </div>
     </footer>
-    
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,14 +1,13 @@
-
+/* Estilos generales */
 body {
     margin: 0;
+    padding: 0;
+    color: white;
 }
 
 * {
-    padding: 0;
-    box-sizing: border-box;
     font-family: "amfibia";
 }
-
 /* NAVBAR */
 .navbar {
     display: flex;
@@ -44,7 +43,6 @@ body {
 }
 
 /* MENÚ */
-
 .menu {
     display: flex;
     justify-content: start; 
@@ -126,92 +124,86 @@ body {
 .navbar {
     animation: slideDown 0.6s ease-out;
 }
-
-/* SECCIÓN BEBIDAS */
-#bebidas {
+/* Sección de cócteles */
+#cocteles {
     text-align: center;
-    margin-top: 140px; 
-    padding-bottom: 80px;
-    padding-top: 80px;
-
+    padding: 180px 20px;
 }
 
-#bebidas h2 {
-    padding-bottom: 20px;
-    font-size: 28px;
+h2 {
+    font-size: 36px;
+    color: #222;
+    margin-bottom: 20px;
 }
 
-.bebidas-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
+.cocteles-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.bebida {
-    text-align: center;
-}
-
-.bebida img {
-    width: 160px;
-    height: 200px;
+.coctel {
+    background: rgb(226, 226, 226);
+    padding: 20px;
     border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s;
 }
 
-.bebida img:hover {
-    transform: scale(1.1);
+.coctel:hover {
+    transform: scale(1.05);
 }
 
-a {
-    text-decoration: none;
+.coctel img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.link:hover {
-    color: #D4A017;
-    transition: color 0.1s ease-in-out;
+.coctel h3 {
+    color: #222;
+    font-size: 20px;
+    margin-top: 10px;
 }
 
+.coctel p {
+    font-size: 16px;
+    color: #222;
+}
 
-/* FOOTER */
+/* Footer */
 footer {
-    background: #222;
-    color: white;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #222; 
+    padding: 30px;
     text-align: center;
+    color: white;
 }
 
 .footer-container {
     display: flex;
-    justify-content: space-between; 
-    width: 80%; 
-    max-width: 1200px; 
-    padding: 0px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .footer-column {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    min-width: 250px;
+    margin: 10px;
 }
 
 .footer-column h2 {
-    margin-bottom: 10px;
-    font-size: 1.4em;
-    font-weight: bold;
-}
-
-.footer-column p {
-    margin: 5px 0;
-    line-height: 1.6; 
+    font-size: 22px;
+    color: white;
 }
 
 .footer-bottom {
     margin-top: 20px;
-    font-size: 0.9em;
+    font-size: 14px;
+    opacity: 0.7;
 }
