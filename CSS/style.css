@@ -1,21 +1,18 @@
 * {
     font-family: "amfibia";
 }
-
-/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 /* NAVBAR */
 .navbar {
     display: flex;
-    align-items: center; /* Alinea verticalmente */
-    justify-content: space-between; /* Espacio entre logo y menú */
-    background-color: rgba(0, 0, 0, 0.8); /* Más oscuro */
-    padding: 20px 40px; /* Navbar más grueso */
+    align-items: center;
+    justify-content: space-between; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 20px 40px; 
     width: 100%;
     position: fixed;
     top: 0;
@@ -24,15 +21,14 @@
     transition: background-color 0.5s ease-in-out, padding 0.3s ease-in-out;
 }
 
-/* Efecto al hacer scroll */
 .navbar.scrolled {
-    background-color: rgba(0, 0, 0, 0.9); /* Navbar más oscuro */
-    padding: 15px 40px; /* Reducir grosor al hacer scroll */
+    background-color: rgba(0, 0, 0, 0.9); 
+    padding: 15px 40px; 
 }
 
 /* LOGO */
 .logo {
-    flex: 1; /* Mantiene el logo alineado a la izquierda */
+    flex: 1; 
 }
 
 .logo img {
@@ -45,21 +41,19 @@
 /* MENÚ */
 .menu {
     display: flex;
-    justify-content: center; /* Centra los elementos del menú */
-    flex-grow: 2; /* Permite que el menú se mantenga centrado */
-    gap: 50px; /* Espaciado entre elementos */
+    justify-content: center; 
+    flex-grow: 2; 
+    gap: 50px; 
     list-style: none;
     padding: 0;
 }
-
-/* Estilos para los elementos del menú */
 .menu li {
     position: relative;
 }
 
 .menu li a {
     text-decoration: none;
-    color: #D4A017; /* Color dorado */
+    color: #D4A017; 
     font-weight: bold;
     font-size: 18px;
     transition: color 0.3s ease-in-out;
@@ -68,8 +62,6 @@
 .menu li a:hover {
     color: #ffcc00;
 }
-
-/* Línea animada debajo de los enlaces */
 .menu li a::after {
     content: "";
     position: absolute;
@@ -85,8 +77,6 @@
 .menu li a:hover::after {
     transform: scaleX(1);
 }
-
-/* SUBMENÚ */
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -97,24 +87,19 @@
     left: 0;
     border-radius: 5px;
 }
-
-/* Efecto desplegable */
 .dropdown:hover .dropdown-menu {
     display: block;
 }
 
-/* Estilo del submenú */
 .dropdown-menu li {
     margin-bottom: 5px;
 }
-
 .dropdown-menu a {
     color: white;
     padding: 8px;
     display: block;
     transition: background 0.3s ease;
 }
-
 .dropdown-menu a:hover {
     background: #d4a017;
     color: black;
@@ -139,7 +124,7 @@
 /* SECCIÓN BEBIDAS */
 #bebidas {
     text-align: center;
-    margin-top: 140px; /* Para que no quede pegado al navbar */
+    margin-top: 140px; 
 }
 
 #bebidas h2 {
@@ -182,9 +167,9 @@ footer {
 
 .footer-container {
     display: flex;
-    justify-content: space-between; /* Espacia las columnas */
-    width: 80%; /* Ajusta el ancho para centrar mejor */
-    max-width: 1200px; /* Evita que se expanda demasiado */
+    justify-content: space-between; 
+    width: 80%; 
+    max-width: 1200px; 
 }
 
 .footer-column {
@@ -203,7 +188,7 @@ footer {
 
 .footer-column p {
     margin: 5px 0;
-    line-height: 1.6; /* Ajusta el espacio entre líneas */
+    line-height: 1.6; 
 }
 
 .footer-bottom {
