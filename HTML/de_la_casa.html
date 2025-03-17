@@ -1,12 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>De la Casa</title>
+    <title>Bebidas de la Casa - Petaco Bar</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" href="../img/PetacoBar-logo.png" type="image/x-icon">
 </head>
 <body>
-    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../img/PetacoBar-logo.png" alt="Petaco Bar">
+        </div>
+        <ul class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#">Menú▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="cocteles.html">Cocteles</a></li>
+                    <li><a href="shots.html">Shots</a></li> 
+                    <li><a href="de_la_casa.html">De la Casa</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Ubicación</a></li>
+            <li><a href="#">Horario</a></li>
+        </ul>
+    </nav>    
+
+    <!-- Sección de Bebidas de la Casa -->
+    <section id="bebidas">
+        <h2>De la Casa</h2>
+        <br>
+        <div class="bebidas-container">
+            <div class="bebida">
+                <img src="../img/Bebida-delacasa.JPG" alt="Pecera Personal">
+                <h3>Pecera Personal........$25.000</h3>
+                <p>Refrescante combinación de licores y frutas.</p>
+            </div>
+            <div class="bebida">
+                <img src="../img/Pecera-Grupal-de-la-casa.PNG" alt="Pecera Grupal">
+                <h3>Pecera Grupal........$45.000</h3>
+                <p>Perfecta para compartir, con una explosión de sabores.</p>
+            </div>
+            <div class="bebida">
+                <img src="../img/Whisky-a-la-Roca.JPG" alt="Whisky a la Roca">
+                <h3>Whisky a la Roca........$20.000</h3>
+                <p>Whisky puro servido con hielo en las rocas.</p>
+            </div>
+            <div class="bebida">
+                <img src="../img/Corona-Envenenada.JPG" alt="Corona Envenenada">
+                <h3>Corona Envenenada........$10.000</h3>
+                <p>Cerveza Corona con un toque de licor y limón.</p>
+            </div>
+            <div class="bebida">
+                <img src="../img/Sodas-Saborizadas.JPG" alt="Sodas Saborizadas">
+                <h3>Sodas Saborizadas........$6.000</h3>
+                <p>Soda con frutas naturales y hierbas aromáticas.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h2>Bar el Petaco</h2>
+                <p>Pub Cocteles, Micheladas y mucho más...</p>
+                <p>Villanueva - Casanare</p>
+                <p>Cr 4 6 68, Villanueva, Colombia</p>
+            </div>
+            <div class="footer-column">
+                <h2>Contáctenos</h2>
+                <p>WhatsApp: +57 3115988576</p>
+                <p>@elpetacobar_villanueva</p>
+                <p>ElPetacobar</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/elpetacobar_villanueva" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/share/18tcnu5zP9/?mibextid=wwXIfr" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="tel:+573115988576">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>El Petaco Bar 2005 | Aviso legal Protección de Datos | Configuración de Cookies | Creado por El Petaco</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
 </body>
 </html>
