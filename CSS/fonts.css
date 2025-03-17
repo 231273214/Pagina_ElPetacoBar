@@ -1,4 +1,12 @@
 @font-face {
-    font-family: "amfibia";
-    src: url(amfibia-condensed/Amfibia-BoldCondensed.ttf) format(TrueType Font);
+    font-family: "Amfibia";
+    src: url('amfibia-condensed/Amfibia-LightCondensed.eot') format('embedded-opentype'),
+         url('amfibia-condensed/Amfibia-LightCondensed.ttf') format('truetype'); 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Amfibia";
+    src: url('amfibia-condensed/Amfibia-BoldCondensed.ttf') format('truetype');
+    font-weight: bold;
 }
