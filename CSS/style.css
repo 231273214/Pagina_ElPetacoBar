@@ -128,11 +128,11 @@ body {
 .navbar {
     animation: slideDown 0.6s ease-out;
 }
-/* HERO - Sección con Imagen de Fondo */
+/* HERO */
 .hero {
     position: relative;
     width: 100%;
-    height: 600px; /* Ajusta según necesites */
+    height: 600px; 
     overflow: hidden;
 }
 
@@ -150,7 +150,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Ajusta el nivel de oscuridad */
+    background: rgba(0, 0, 0, 0.5); 
 }
 /* SECCIÓN BEBIDAS */
 #bebidas {
@@ -166,15 +166,43 @@ body {
     font-size: 28px;
 }
 
+.bebidas-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; 
+    perspective: 800px; 
+}
+
 .bebidas-container {
     display: flex;
     justify-content: center;
     gap: 30px;
     margin-top: 20px;
+    transform-style: preserve-3d;
+    animation: rotate 15s infinite linear;
 }
 
 .bebida {
     text-align: center;
+}
+.bebida:nth-child(1) {
+    transform: rotateY(-500deg) translateZ(-220px);
+}
+.bebida:nth-child(2) {
+    transform: rotateY(120deg) translateZ(230px);
+}
+.bebida:nth-child(3) {
+    transform: rotateY(240deg) translateZ(360px);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
 }
 
 .bebida img {
@@ -211,9 +239,9 @@ footer {
 
 .footer-container {
     display: flex;
-    justify-content: center; /* Centra las columnas en el footer */
+    justify-content: center;
     align-items: flex-start;
-    gap: 500px; /* Ajusta la separación entre columnas */
+    gap: 500px; 
 }
 
 .footer-column {
@@ -235,9 +263,9 @@ footer {
 
 .footer-bottom {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    text-align: center; /* Asegura que el texto esté alineado */
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
     width: 80%;
     max-width: 1200px;
     margin: 20px auto 0;
