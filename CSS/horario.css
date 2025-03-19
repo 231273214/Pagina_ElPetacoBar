@@ -143,7 +143,6 @@ body {
     display: block;
 }
 
-/* Capa de transparencia */
 .hero .overlay {
     position: absolute;
     top: 0;
@@ -153,68 +152,55 @@ body {
     background: rgba(0, 0, 0, 0.5); 
 }
 
-/* SECCIÓN BEBIDAS */
-.bebidas-container {
+h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 220px;
+    margin-bottom: 60px;
+}
+
+.horario-container {
     display: flex;
     justify-content: center;
-    position: relative;
-    width: 300px;
-    height: 300px;
-    transform-style: preserve-3d;
-    animation: rotate 15s infinite linear;
-}
-.bebidas{
-    margin: 120px 530px;
+    margin-bottom: 160px;
 }
 
-.bebida {
-    position: absolute;
-    text-align: center;
-    transform-style: preserve-3d;
-}
-.title_bebidas{ 
-    text-align: center;
-    margin-bottom: 80px;
-}
-
-.bebida:nth-child(1) {
-    transform: rotateY(0deg) translateZ(250px);
-}
-.bebida:nth-child(2) {
-    transform: rotateY(120deg) translateZ(250px);
-}
-.bebida:nth-child(3) {
-    transform: rotateY(240deg) translateZ(250px);
-}
-
-@keyframes rotate {
-    from {
-        transform: rotateY(0deg);
-    }
-    to {
-        transform: rotateY(360deg);
-    }
-}
-
-.bebida img {
-    width: 160px;
-    height: 200px;
+table {
+    width: 60%;
+    border-collapse: collapse;
+    background: #222;
     border-radius: 10px;
-    transition: transform 0.3s;
+    overflow: hidden;
 }
 
-.bebida img:hover {
-    transform: scale(1.1);
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #444;
 }
 
-/* Mapa de la pagina ubicación */
-.mapa {
-    margin-top: 150px;
-    text-align: center;
+th {
+    background: #ffcc00;
+    color: #222;
+    font-size: 18px;
 }
-#map {
-    margin-bottom: 40px;
-    margin-left: 290px;
+
+td {
+    font-size: 16px;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover {
+    background: #333;
+}
+
+@media (max-width: 768px) {
+    table {
+        width: 90%;
+    }
 }
 
 /* FOOTER */
