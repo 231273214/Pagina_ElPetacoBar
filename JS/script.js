@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Cambio de color en el navbar cuando se hace scroll
+    // Cambio de color cuando se hace scroll
     window.addEventListener("scroll", function () {
         requestAnimationFrame(() => {
             if (window.scrollY > 50) {

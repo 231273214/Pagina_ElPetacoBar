@@ -106,13 +106,13 @@ body {
     }
 
     .menu {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
+        display: none;
     }
-
+    
     .menu.active {
         display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .menu-toggle {
@@ -246,10 +246,20 @@ footer {
 
 /* TITULOS DEL FOOTER */
 .footer-column h2 {
+    color: white; 
     margin-bottom: 10px;
-    font-size: 1.4em;
+    font-size: 1.6em; 
     font-weight: bold;
+    text-align: left; 
 }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .footer-column h2 {
+        text-align: center; 
+    }
+}
+
 
 /* TEXTOS DEL FOOTER */
 .footer-column p {
