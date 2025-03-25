@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let menuToggle = document.querySelector(".menu-toggle");
     let menu = document.querySelector(".menu");
 
-    // Mostrar/ocultar dropdown en hover (solo en escritorio)
+    // Mostrar/ocultar dropdown en hover 
     if (window.innerWidth > 768) {
         dropdown.addEventListener("mouseenter", function () {
             dropdownMenu.classList.add("show");
@@ -13,6 +13,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         dropdown.addEventListener("mouseleave", function () {
             dropdownMenu.classList.remove("show");
+        });
+    } else {
+        // Para móviles: Mostrar dropdown al hacer clic
+        dropdown.addEventListener("click", function () {
+            dropdown.classList.toggle("active");
         });
     }
 
@@ -32,9 +37,17 @@ document.addEventListener("DOMContentLoaded", function () {
         menu.classList.toggle("active");
     });
 
-    // Cerrar menú cuando se toca un enlace en móviles
+    // Evitar que el menú hamburguesa se cierre al hacer clic dentro del submenú
+    document.querySelector(".dropdown-menu").addEventListener("click", function (event) {
+        event.stopPropagation();
+    });
+
+    // Cerrar menú hamburguesa al hacer clic en un enlace 
     document.querySelectorAll(".menu a").forEach(link => {
-        link.addEventListener("click", function () {
+        link.addEventListener("click", function (event) {
+            if (event.target.closest(".dropdown-menu")) {
+                return; // No cerrar si el clic fue en el submenú
+            }
             menu.classList.remove("active");
         });
     });

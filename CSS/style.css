@@ -231,6 +231,15 @@ body {
     max-width: 250px; 
 }
 
+.linkBebida{
+    text-decoration: none;
+    transition: color 0.3s ease-in
+}
+
+a:hover{
+    color: #D4A017;
+}
+
 .bebida img {
     width: 100%; 
     max-width: 160px;
@@ -243,7 +252,7 @@ body {
     transform: scale(1.1);
 }
 
-/* Responsivo para tablets */
+/* Responsive para tablets */
 @media (max-width: 768px) {
     .bebidas-container {
         flex-direction: row;
@@ -256,7 +265,7 @@ body {
     }
 }
 
-/* Responsivo para móviles */
+/* Responsive para móviles */
 @media (max-width: 480px) {
     .bebidas-container {
         flex-direction: column;
