@@ -4,40 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ubicacion</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/ubicacion.css">
     <link rel="stylesheet" href="CSS/fonts.css">
     <link rel="icon" href="../img/PetacoBar-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="img/PetacoBar-logo.png" type="image/x-icon">
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 <body>
-    <!-- Navbar Menu de cabecera -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="../img/PetacoBar-logo.png" alt="Petaco Bar">
-        </div>
-        <ul class="menu">
-            <li><a href="../index.html">Inicio</a></li>
-            <li class="dropdown">
-                <a href="#">Menú▾</a>
-                <ul class="dropdown-menu">
-                    <li><a href="cocteles.html">Cocteles</a></li>
-                    <li><a href="shots.html">Shots</a></li>
-                    <li><a href="de_la_casa.html">De la casa</a></li>
-                </ul>
-            </li>
-            <li><a href="ubicacion.html">Ubicación</a></li>
-            <li><a href="horario.html">Horario</a></li>
-        </ul>
-    </nav>
+   <!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="../img/PetacoBar-logo.png" alt="Petaco Bar">
+    </div>
+    
+    <!-- Botón para menú en móviles -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <ul class="menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li class="dropdown">
+            <a href="#">Menú▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="cocteles.html">Cocteles</a></li>
+                <li><a href="shots.html">Shots</a></li> 
+                <li><a href="de_la_casa.html">De la casa</a></li>
+            </ul>
+        </li>
+        <li><a href="ubicacion.html">Ubicación</a></li>
+        <li><a href="horario.html">Horario</a></li>
+    </ul>
+</nav>
+
     <!-- Sección del mapa  -->
      <br>
     <h1 class="mapa">El Petaco Bar </h1>
     <br>
-    <div id="map" style="height: 400px; width: 800px; margin: 0 auto; display: block;></div>
-    
+    <div id="map" style="height: 400px; width: 800px; margin: 0 auto; display: block;"></div>
 <!-- Footer  -->
-   <footer>
+<footer>
     <div class="footer-container">
         <div class="footer-column">
             <h2>Bar el Petaco</h2>
@@ -67,5 +73,6 @@
         <p>El Petaco Bar 2005 | Aviso legal Protección de Datos | Configuración de Cookies | Creado por El Petaco</p>
     </div>
     <script src="../JS/mapa.js"></script>
+    <script src="../JS/script.js"></script>
 </body>
 </html>

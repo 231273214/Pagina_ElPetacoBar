@@ -10,25 +10,29 @@
     <link rel="icon" href="../img/PetacoBar-logo.png" type="image/x-icon">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="../img/PetacoBar-logo.png" alt="Petaco Bar">
-        </div>
-        <ul class="menu">
-            <li><a href="../index.html">Inicio</a></li>
-            <li class="dropdown">
-                <a href="#">Menú▾</a>
-                <ul class="dropdown-menu">
-                    <li><a href="cocteles.html">Cocteles</a></li>
-                    <li><a href="shots.html">Shots</a></li> 
-                    <li><a href="de_la_casa.html">De la Casa</a></li>
-                </ul>
-            </li>
-            <li><a href="ubicacion.html">Ubicación</a></li>
-            <li><a href="horario.html">Horario</a></li>
-        </ul>
-    </nav>    
+   <!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="../img/PetacoBar-logo.png" alt="Petaco Bar">
+    </div>
+    
+    <!-- Botón para menú en móviles -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <ul class="menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li class="dropdown">
+            <a href="#">Menú▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="cocteles.html">Cocteles</a></li>
+                <li><a href="shots.html">Shots</a></li> 
+                <li><a href="de_la_casa.html">De la casa</a></li>
+            </ul>
+        </li>
+        <li><a href="ubicacion.html">Ubicación</a></li>
+        <li><a href="horario.html">Horario</a></li>
+    </ul>
+</nav>
 
     <!-- Sección de Bebidas de la Casa -->
     <section id="bebidas">
@@ -94,6 +98,6 @@
         </div>
     </footer>
 
-    <script src="../script.js"></script>
+    <script src="../JS/script.js"></script>
 </body>
 </html>

@@ -10,30 +10,36 @@
     <link rel="icon" href="img/PetacoBar-logo.png" type="image/x-icon">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="img/PetacoBar-logo.png" alt="Petaco Bar">
-        </div>
-        <ul class="menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li class="dropdown">
-                <a href="#">Menú▾</a>
-                <ul class="dropdown-menu">
-                    <li><a href="HTML/cocteles.html">Cocteles</a></li>
-                    <li><a href="HTML/shots.html">Shots</a></li> 
-                    <li><a href="HTML/de_la_casa.html">De la casa</a></li>
-                </ul>
-            </li>
-            <li><a href="HTML/ubicacion.html">Ubicación</a></li>
-            <li><a href="HTML/horario.html">Horario</a></li>
-        </ul>
-    </nav>    
-    <!-- Sección con Imagen de Fondo -->
-    <div class="hero">
-        <img src="img/Fondo-PetacoBar.jpg" alt="Petaco Bar">
-        <div class="overlay"></div>
+   <!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <img src="img/PetacoBar-logo.png" alt="Petaco Bar">
     </div>
+    
+    <!-- Botón para menú en móviles -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="dropdown">
+            <a href="#">Menú▾</a>
+            <ul class="dropdown-menu">
+                <li><a href="HTML/cocteles.html">Cocteles</a></li>
+                <li><a href="HTML/shots.html">Shots</a></li> 
+                <li><a href="HTML/de_la_casa.html">De la casa</a></li>
+            </ul>
+        </li>
+        <li><a href="HTML/ubicacion.html">Ubicación</a></li>
+        <li><a href="HTML/horario.html">Horario</a></li>
+    </ul>
+</nav>
+
+<!-- Sección con Imagen de Fondo -->
+<div class="hero">
+    <img src="img/Fondo-PetacoBar.jpg" alt="Petaco Bar">
+    <div class="overlay"></div>
+</div>
+
     <!-- Sección de Bebidas -->
     <section class="bebidas">
         <h2 class="title_bebidas">Nuestras Bebidas</h2>
@@ -92,6 +98,6 @@
         </div>
     </footer>
     
-    <script src="script.js"></script>
+    <script src="JS/script.js"></script>
 </body>
 </html>

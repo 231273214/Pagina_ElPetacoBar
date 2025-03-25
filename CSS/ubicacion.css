@@ -168,56 +168,87 @@ body {
     animation: slideDown 0.6s ease-out;
 }
 
-/* Sección de Shots */
-#shots {
+/* SECCIÓN BEBIDAS */
+.bebidas-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    animation: rotate 15s infinite linear;
+}
+.bebidas{
+    margin: 120px 530px;
+}
+
+.bebida {
+    position: absolute;
     text-align: center;
-    padding: 180px 20px;
+    transform-style: preserve-3d;
+}
+.title_bebidas{ 
+    text-align: center;
+    margin-bottom: 80px;
 }
 
-h2 {
-    font-size: 36px;
-    color: #222;
-    margin-bottom: 20px;
+.bebida:nth-child(1) {
+    transform: rotateY(0deg) translateZ(250px);
+}
+.bebida:nth-child(2) {
+    transform: rotateY(120deg) translateZ(250px);
+}
+.bebida:nth-child(3) {
+    transform: rotateY(240deg) translateZ(250px);
 }
 
-.shot-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
 }
 
-.shot {
-    background: rgb(226, 226, 226);
-    padding: 20px;
+.bebida img {
+    width: 160px;
+    height: 200px;
     border-radius: 10px;
-    text-align: center;
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
     transition: transform 0.3s;
 }
 
-.shot:hover {
-    transform: scale(1.05);
+.bebida img:hover {
+    transform: scale(1.1);
 }
 
-.shot img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
+/* Mapa de la pagina ubicación */
+.mapa {
+    margin-top: 150px;
+    text-align: center;
 }
 
-.shot h3 {
-    color: #222;
-    font-size: 20px;
-    margin-top: 10px;
+#map {
+    margin-bottom: 60px;
+    margin-left: 290px;
+    margin-top: 150px;
 }
 
-.shot p {
-    font-size: 16px;
-    color: #222;
+/* Responsive */
+@media (max-width: 1024px) {
+    #map {
+        width: 95%; 
+        height: 400px; 
+    }
 }
+
+@media (max-width: 768px) {
+    #map {
+        width: 100%; 
+        height: 350px; 
+    }
+}
+
 
 /* FOOTER */
 footer {
@@ -225,6 +256,7 @@ footer {
     color: white;
     padding: 40px 0;
     display: flex;
+    margin-top: 70px;
     flex-direction: column;
     align-items: center;
     text-align: center;
