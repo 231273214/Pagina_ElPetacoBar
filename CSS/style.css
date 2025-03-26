@@ -40,19 +40,23 @@ body {
     margin-left: 20px;
 }
 
-/* MENÚ */
+/* Menu */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+/* Items del menu */
 .menu {
     display: flex;
-    justify-content: start; 
-    flex-grow: 2; 
-    gap: 50px; 
+    justify-content: center;
+    flex-grow: 1;
     list-style: none;
-    padding: 0;
 }
 
 .menu li {
     position: relative;
-    padding: 0px 30px;
 }
 
 .menu li a {
@@ -60,6 +64,7 @@ body {
     color: #D4A017; 
     font-weight: bold;
     font-size: 18px;
+    padding: 0px 90px;
     transition: color 0.3s ease-in-out;
 }
 

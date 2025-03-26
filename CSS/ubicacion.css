@@ -36,25 +36,23 @@ body {
     margin-left: 20px;
 }
 
-/* MENÚ */
+/* Menu */
 .nav-menu {
     display: flex;
-    justify-content: center; 
-    gap: 20px;
+    justify-content: center;
+    flex-grow: 1;
 }
 
-/* ITEMS DEL MENÚ */
+/* Items del menu */
 .menu {
     display: flex;
     justify-content: center;
-    gap: 50px; 
+    flex-grow: 1;
     list-style: none;
-    padding: 0;
 }
 
 .menu li {
     position: relative;
-    padding: 0px 30px;
 }
 
 .menu li a {
@@ -62,6 +60,7 @@ body {
     color: #D4A017; 
     font-weight: bold;
     font-size: 18px;
+    padding: 0px 90px;
     transition: color 0.3s ease-in-out;
 }
 
@@ -122,7 +121,6 @@ body {
     }
 }
 
-
 /* DROPDOWN */
 .dropdown-menu {
     display: none;
@@ -172,70 +170,17 @@ body {
     animation: slideDown 0.6s ease-out;
 }
 
-/* SECCIÓN BEBIDAS */
-.bebidas-container {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 300px;
-    height: 300px;
-    transform-style: preserve-3d;
-    animation: rotate 15s infinite linear;
-}
-.bebidas{
-    margin: 120px 530px;
-}
-
-.bebida {
-    position: absolute;
-    text-align: center;
-    transform-style: preserve-3d;
-}
-.title_bebidas{ 
-    text-align: center;
-    margin-bottom: 80px;
-}
-
-.bebida:nth-child(1) {
-    transform: rotateY(0deg) translateZ(250px);
-}
-.bebida:nth-child(2) {
-    transform: rotateY(120deg) translateZ(250px);
-}
-.bebida:nth-child(3) {
-    transform: rotateY(240deg) translateZ(250px);
-}
-
-@keyframes rotate {
-    from {
-        transform: rotateY(0deg);
-    }
-    to {
-        transform: rotateY(360deg);
-    }
-}
-
-.bebida img {
-    width: 160px;
-    height: 200px;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
-
-.bebida img:hover {
-    transform: scale(1.1);
-}
-
 /* Mapa de la pagina ubicación */
 .mapa {
-    margin-top: 150px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 170px;
 }
 
 #map {
-    margin-bottom: 60px;
-    margin-left: 290px;
-    margin-top: 150px;
+    margin: 150px auto 60px; 
 }
 
 /* Responsive */
@@ -253,6 +198,16 @@ body {
     }
 }
 
+@media (max-width: 430px) {
+    #map {
+        width: 100% !important;
+        height: 320px !important;
+        margin-top: 40px !important;
+    }
+    .mapa{
+        margin-top: 170px;
+    }
+}
 
 /* FOOTER */
 footer {
